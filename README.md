@@ -6,9 +6,9 @@ Built with Python and Streamlit, this tool simulates the transition from standar
 
 ---
 
-## 🚀 Live Interactive Dashboard
+##  Live Interactive Dashboard
 Experience the live microarchitectural simulator directly in your browser:  
-👉 **[Launch Interactive Hardware Simulator](https://share.streamlit.io/)** *(Replace this link with your deployed Streamlit URL)*
+**[Launch Interactive Hardware Simulator](https://attention-io-simulator.streamlit.app/)** 
 
 ---
 
