@@ -46,7 +46,7 @@ $$\mathbf{S} = \mathbf{Q}\mathbf{K}^T \quad \rightarrow \quad \mathbf{P} = \text
 
 | Metric | Standard Unfused Attention | Fused Tiled Attention (Online Softmax) | Architectural Impact |
 | :--- | :--- | :--- | :--- |
-| **Intermediate $S$ Footprint** | Materialized in DRAM ($\mathcal{O}(N^2)$) | Never materialized off-chip | Zero DRAM allocation for logits |
+| **Intermediate $S$ Footprint** | Materialized in DRAM (${O}(N^2)$) | Never materialized off-chip | Zero DRAM allocation for logits |
 | **DRAM Memory Traffic** | $(4Nd + 3N^2) \times \text{bytes}$ | $\approx 2Nd + \frac{2N^2 d \times \text{bytes}}{S_{\text{SRAM}}}$ | Up to **$8\times$ reduction** in DRAM I/O[cite: 3] |
 | **Execution Regime** | **Memory-Bound** (DRAM Starved) | **Compute-Bound** (Tensor Core Saturated) | Minimizes memory stall cycles[cite: 3] |
 | **Numerical Accuracy** | Two-pass standard softmax | Dynamically rescaled single-pass | Exact floating-point parity |
